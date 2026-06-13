@@ -4,164 +4,235 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abel Mora Vázquez | Data Science · Leadership · Security</title>
-  <meta name="description" content="Portfolio ejecutivo de Abel Mora Vázquez: Ciencia de Datos, liderazgo de equipos, seguridad privada y formación AVSEC." />
+  <meta name="description" content="Portfolio ejecutivo de Abel Mora Vázquez: Ciencia de Datos, liderazgo de equipos, seguridad privada e Instructor AVSEC." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="particles"></canvas>
-  <header class="nav">
-    <a class="brand" href="#inicio">AMV</a>
-    <nav>
-      <a href="#data">Data Science</a>
+  <header class="site-header">
+    <a href="#inicio" class="brand">AMV</a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#datos">Ciencia de Datos</a>
       <a href="#liderazgo">Liderazgo</a>
       <a href="#seguridad">Seguridad</a>
-      <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="hero section">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Perfil ejecutivo híbrido</p>
-        <h1>ABEL MORA VÁZQUEZ</h1>
-        <h2>Data Science · Leadership · Security</h2>
-        <p class="hero-text">Transformando datos, experiencia operativa y liderazgo en decisiones estratégicas y resultados medibles.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="https://tfm-abel-mora-vazquez.streamlit.app/" target="_blank" rel="noopener">Ver proyecto TFM</a>
+    <section id="inicio" class="hero section-full">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Perfil ejecutivo-tecnológico</p>
+          <h1>Abel Mora Vázquez</h1>
+          <p class="hero-subtitle">Data Science · Leadership · Security</p>
+          <p class="hero-text">Transformando datos, experiencia operativa y liderazgo en decisiones estratégicas y resultados medibles.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://tfm-abel-mora-vazquez.streamlit.app/" target="_blank" rel="noopener">Ver TFM</a>
+            <a class="btn" href="https://public.flourish.studio/story/3550503/" target="_blank" rel="noopener">Presentación</a>
+            <a class="btn ghost" href="docs/CV_Abel_Mora_Vazquez.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/abelmoravazquez/" target="_blank" rel="noopener">LinkedIn</a>
+            <span>·</span>
+            <a href="https://github.com/Abelibz" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap reveal delay-1">
+          <div class="photo-orbit"></div>
+          <img class="hero-photo" src="img/profile.jpg" alt="Foto profesional de Abel Mora Vázquez" />
+        </div>
+      </div>
+    </section>
+
+    <section id="trayectoria" class="section timeline-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trayectoria profesional</p>
+          <h2>De la experiencia operativa a la dirección estratégica y la Ciencia de Datos</h2>
+          <p>Una evolución construida desde posiciones de primera línea hasta perfiles de liderazgo, seguridad especializada y analítica avanzada.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item stage-ops reveal">
+            <div class="dot"></div>
+            <div class="timeline-card">
+              <span class="date">Etapa inicial</span>
+              <h3>Controlador de Accesos</h3>
+              <p>Primer contacto con la operativa de seguridad, control, atención al público y gestión de accesos.</p>
+            </div>
+          </article>
+          <article class="timeline-item stage-ops reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/trablisa.png" alt="Trablisa" />
+              <div><span class="date">2008–2012</span><h3>Vigilante de Seguridad</h3><p>Experiencia en seguridad aeroportuaria, inspección, control de accesos y coordinación operativa.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-security reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/uah.png" alt="Universidad de Alcalá" />
+              <div><span class="date">2015–2016</span><h3>Máster en Dirección de Seguridad</h3><p>Formación directiva especializada en seguridad, normativa, gestión de riesgos y protección.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-security reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/nightman.png" alt="Nightman Group" />
+              <div><span class="date">2012–2016</span><h3>Director de Seguridad</h3><p>Dirección operativa, coordinación de servicios y gestión de equipos en entornos de alta exigencia.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-security reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/rotonda.png" alt="Grupo Rotonda" />
+              <div><span class="date">2016–2017</span><h3>Director de Seguridad y Cumplimiento Normativo</h3><p>Responsabilidad en cumplimiento, coordinación, procesos y supervisión de operaciones.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-leadership reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/lidl.png" alt="Lidl" />
+              <div><span class="date">2018–Actualidad</span><h3>Adjunto a Gerencia · Liderazgo Comercial</h3><p>Gestión de equipos, KPIs, formación, organización operativa y orientación a resultados.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-data reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/uoc.png" alt="Universitat Oberta de Catalunya" />
+              <div><span class="date">2019–2025</span><h3>Grado en Ciencia de Datos Aplicada</h3><p>Formación universitaria en programación, estadística, machine learning, bases de datos y visualización.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-data reveal">
+            <div class="dot"></div>
+            <div class="timeline-card with-logo">
+              <img src="img/uoc.png" alt="Universitat Oberta de Catalunya" />
+              <div><span class="date">2025–2026</span><h3>Máster Universitario en Ciencia de Datos</h3><p>Especialización en analítica avanzada, modelos predictivos, IA y toma de decisiones basada en datos.</p></div>
+            </div>
+          </article>
+          <article class="timeline-item stage-data reveal">
+            <div class="dot"></div>
+            <div class="timeline-card highlight">
+              <span class="date">TFM</span>
+              <h3>Barcelona Housing Analytics</h3>
+              <p>Aplicación interactiva para analizar el mercado inmobiliario del área metropolitana de Barcelona.</p>
+              <a href="https://tfm-abel-mora-vazquez.streamlit.app/" target="_blank" rel="noopener">Abrir aplicación →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="datos" class="section data-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ciencia de Datos</p>
+          <h2>Analítica avanzada aplicada a problemas reales</h2>
+          <p>Formación universitaria en Ciencia de Datos combinada con experiencia real en operaciones, equipos y toma de decisiones.</p>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="img/tfm-app.png" alt="Aplicación TFM de análisis inmobiliario en Barcelona" />
+          </div>
+          <div class="project-content">
+            <p class="eyebrow">Proyecto destacado · TFM</p>
+            <h3>Análisis del mercado inmobiliario en el área metropolitana de Barcelona</h3>
+            <p>Aplicación desarrollada con técnicas de Machine Learning, visualización avanzada y análisis multivariable para explorar distritos, servicios urbanos, percepción vecinal y predicción de precios.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Streamlit</span><span>CatBoost</span><span>Machine Learning</span><span>Plotly</span><span>Pandas</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn primary" href="https://tfm-abel-mora-vazquez.streamlit.app/" target="_blank" rel="noopener">Ver aplicación</a>
+              <a class="btn" href="https://public.flourish.studio/story/3550503/" target="_blank" rel="noopener">Ver presentación</a>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img src="img/tfm-presentacion.png" alt="Presentación TFM Barcelona" /><figcaption>Presentación interactiva</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="img/tfm-prediccion.png" alt="Predicción de precio con CatBoost" /><figcaption>Predicción de precio</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="img/tfm-radar.png" alt="Comparativa de distritos" /><figcaption>Comparativa de distritos</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="img/tfm-movilidad.png" alt="Servicios de movilidad urbana" /><figcaption>Servicios urbanos</figcaption></figure>
+        </div>
+        <div class="skills-grid reveal">
+          <span>Machine Learning</span><span>Inteligencia Artificial</span><span>Modelos predictivos</span><span>Visualización</span><span>ETL</span><span>Bases de datos</span><span>NLP</span><span>Computer Vision</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="liderazgo" class="section split-section">
+      <div class="container split-grid">
+        <div class="reveal">
+          <p class="eyebrow">Leadership & Sales</p>
+          <h2>Dirección de equipos, formación y orientación a resultados</h2>
+          <p>Experiencia en gestión de equipos, planificación operativa, seguimiento de KPIs, reporting, formación y optimización de procesos.</p>
+          <ul class="check-list">
+            <li>Gestión y desarrollo de equipos.</li>
+            <li>Coordinación operativa y orientación a resultados.</li>
+            <li>Formación, seguimiento y mejora continua.</li>
+            <li>Visión de negocio apoyada en datos.</li>
+          </ul>
+        </div>
+        <div class="logo-panel reveal delay-1">
+          <img src="img/lidl.png" alt="Lidl" />
+          <h3>Adjunto a Gerencia</h3>
+          <p>Experiencia actual en liderazgo comercial, gestión operativa y consecución de objetivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad" class="section security-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Security & AVSEC Training</p>
+          <h2>Seguridad privada, dirección operativa y formación especializada</h2>
+          <p>Trayectoria en seguridad desde la operativa de primera línea hasta dirección, cumplimiento normativo y formación AVSEC.</p>
+        </div>
+        <div class="security-grid">
+          <div class="security-card reveal"><img src="img/aesa.png" alt="AESA" /><h3>Instructor AVSEC</h3><p>Formación especializada en seguridad aeroportuaria y certificaciones emitidas por AESA.</p></div>
+          <div class="security-card reveal"><h3>Director de Seguridad</h3><p>Dirección, coordinación de servicios y gestión de equipos en entornos complejos.</p></div>
+          <div class="security-card reveal"><h3>Formador de Seguridad Privada</h3><p>Capacidad para diseñar, impartir y acompañar procesos formativos en seguridad.</p></div>
+          <div class="security-card reveal"><h3>Cumplimiento Normativo</h3><p>Experiencia en supervisión, procesos, normativa y responsabilidad operativa.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recognition-section">
+      <div class="container recognition-grid">
+        <div class="reveal">
+          <p class="eyebrow">Reconocimientos</p>
+          <h2>Iniciativa, liderazgo y mejora continua</h2>
+          <p>Ganador del concurso My Idea en Lidl con una solución orientada al análisis del comportamiento del cliente en tienda y generación de insights operativos.</p>
+        </div>
+        <div class="quote-card reveal delay-1">
+          <p>“Liderazgo, capacidad analítica, adaptación y profesionalidad en entornos de alta responsabilidad.”</p>
+          <span>Cartas de recomendación disponibles</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-card reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Conectemos</h2>
+        <p>Disponible para oportunidades relacionadas con Ciencia de Datos, analítica avanzada, liderazgo de equipos, seguridad y formación especializada.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://www.linkedin.com/in/abelmoravazquez/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/Abelibz" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/abelmoravazquez/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="mailto:abelibz@gmail.com">Email</a>
         </div>
-      </div>
-      <div class="hero-card reveal">
-        <div class="photo-ring">
-          <img src="img/profile.jpg" alt="Foto profesional de Abel Mora Vázquez" />
-        </div>
-        <div class="status-card">
-          <span></span>
-          Disponible para proyectos de datos, liderazgo operativo y consultoría.
-        </div>
-      </div>
-    </section>
-
-    <section class="section intro reveal">
-      <h2>Sobre mí</h2>
-      <p>Soy un profesional con experiencia en dirección operativa, gestión de equipos y seguridad privada que ha orientado su desarrollo académico y profesional hacia la Ciencia de Datos y la Inteligencia Artificial.</p>
-      <p>Mi trayectoria combina liderazgo, operaciones, formación especializada y analítica avanzada para apoyar la toma de decisiones, optimizar procesos y generar valor en las organizaciones.</p>
-    </section>
-
-    <section id="data" class="section reveal">
-      <div class="section-title">
-        <p>01</p>
-        <h2>Ciencia de Datos</h2>
-      </div>
-      <div class="grid cards">
-        <article class="card featured">
-          <h3>Data Science & AI</h3>
-          <p>Formación universitaria en Ciencia de Datos aplicada, machine learning, inteligencia artificial, visualización, ETL, bases de datos y modelos predictivos.</p>
-        </article>
-        <article class="card">
-          <h3>Formación</h3>
-          <ul>
-            <li>Máster en Ciencia de Datos · UOC</li>
-            <li>Grado en Ciencia de Datos Aplicada · UOC</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Competencias</h3>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Modelos predictivos</li>
-            <li>Visualización de datos</li>
-            <li>Python, ETL y bases de datos</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="liderazgo" class="section reveal">
-      <div class="section-title">
-        <p>02</p>
-        <h2>Liderazgo y Dirección de Equipos</h2>
-      </div>
-      <div class="timeline">
-        <div class="item"><span>2018 · Actualidad</span><strong>Adjunto a Gerente · Lidl Supermercados S.A.U.</strong><p>Gestión de equipos, seguimiento de KPIs, planificación operativa, formación y orientación a resultados.</p></div>
-        <div class="item"><span>Reconocimiento</span><strong>Ganador concurso My Idea · Lidl</strong><p>Propuesta orientada al análisis del comportamiento del cliente en tienda y generación de insights operativos.</p></div>
-      </div>
-    </section>
-
-    <section id="seguridad" class="section reveal">
-      <div class="section-title">
-        <p>03</p>
-        <h2>Seguridad Privada y Formación AVSEC</h2>
-      </div>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Dirección de Seguridad</h3>
-          <p>Experiencia como Director de Seguridad y Director de Seguridad y Cumplimiento Normativo en entornos de alta responsabilidad.</p>
-        </article>
-        <article class="card">
-          <h3>Formación Especializada</h3>
-          <p>Formador de seguridad privada e Instructor AVSEC con certificaciones en seguridad aeroportuaria.</p>
-        </article>
-        <article class="card">
-          <h3>Ámbitos AVSEC</h3>
-          <ul>
-            <li>Seguridad aeroportuaria</li>
-            <li>Carga, correo y suministros</li>
-            <li>Pasajeros y equipajes</li>
-            <li>Personal aeroportuario</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="proyectos" class="section reveal">
-      <div class="section-title">
-        <p>04</p>
-        <h2>Proyectos Destacados</h2>
-      </div>
-      <div class="project-card">
-        <div>
-          <p class="eyebrow">Trabajo Final de Máster</p>
-          <h3>Análisis del mercado inmobiliario en el área metropolitana de Barcelona</h3>
-          <p>Aplicación interactiva desarrollada en Streamlit para explorar, analizar y visualizar información inmobiliaria mediante Ciencia de Datos.</p>
-        </div>
-        <a class="btn primary" href="https://tfm-abel-mora-vazquez.streamlit.app/" target="_blank" rel="noopener">Abrir aplicación</a>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-title">
-        <p>05</p>
-        <h2>Reconocimientos y Referencias</h2>
-      </div>
-      <div class="quote-grid">
-        <blockquote>Profesionalidad, liderazgo, dedicación y capacidad de coordinación en entornos de seguridad.</blockquote>
-        <blockquote>Capacidad analítica, adaptación y compromiso en contextos de alta responsabilidad.</blockquote>
-        <blockquote>Reconocimiento interno por iniciativa orientada a datos, cliente e insights operativos.</blockquote>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact reveal">
-      <h2>Contacto</h2>
-      <p>Conectemos para oportunidades relacionadas con Ciencia de Datos, liderazgo operativo, seguridad privada o formación especializada.</p>
-      <div class="hero-actions center">
-        <a class="btn primary" href="docs/CV_Abel_Mora_Vazquez.pdf" target="_blank">Descargar CV</a>
-        <a class="btn" href="mailto:abelibz@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/abelmoravazquez/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/Abelibz" target="_blank" rel="noopener">GitHub</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Abel Mora Vázquez · Portfolio Ejecutivo</p>
+  <footer class="footer">
+    <p>© <span id="year"></span> Abel Mora Vázquez · Data Science · Leadership · Security</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
